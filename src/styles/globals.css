@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--warm-tone-2: #f3f2ed;
+	--warm-tone-3: #ecebe9;
+	--warm-tone-4: #cbc9bc;
+	--graphite: #1a1817;
+	--subdued: #666666;
+	--light: #f6f6f6;
+	--lime: #e1ff4d;
+}
+
+body {
+	color: var(--graphite);
+	background: var(--warm-tone-2);
+	font-family: Arial, Helvetica, sans-serif;
+	scroll-behavior: smooth;
+}

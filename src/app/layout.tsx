@@ -1,19 +1,27 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import localFont from 'next/font/local';
 
 import '@/styles/globals.css';
 
 import Footer from '@/components/layout/footer';
 import Header from '@/components/layout/header';
 
-const geistSans = Geist({
-	variable: '--font-geist-sans',
-	subsets: ['latin'],
-});
+import { cn } from '@/lib/utils';
 
-const geistMono = Geist_Mono({
-	variable: '--font-geist-mono',
-	subsets: ['latin'],
+const fhOscar = localFont({
+	variable: '--font-fh-oscar',
+	src: [
+		{
+			path: '../../public/fonts/fh-oscar-regular.otf',
+			style: 'normal',
+			weight: '400',
+		},
+		{
+			path: '../../public/fonts/fh-oscar-bold.otf',
+			style: 'normal',
+			weight: '700',
+		},
+	],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +36,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+			<body className={cn('antialiased', fhOscar.variable)}>
 				<Header />
 				<main className='min-h-screen pt-16'>{children}</main>
 				<Footer />

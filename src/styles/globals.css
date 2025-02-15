@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 :root {
 	--warm-tone-2: #f3f2ed;
@@ -12,9 +10,30 @@
 	--lime: #e1ff4d;
 }
 
+@theme {
+	--color-warm-tone-2: var(--warm-tone-2);
+	--color-warm-tone-3: var(--warm-tone-3);
+	--color-warm-tone-4: var(--warm-tone-4);
+	--color-graphite: var(--graphite);
+	--color-subdued: var(--subdued);
+	--color-light: var(--light);
+	--color-lime: var(--lime);
+
+	--list-style-type-dashed: '- ';
+}
+
+@layer base {
+	ul {
+		list-style-position: inside;
+	}
+	button {
+		cursor: pointer;
+	}
+}
+
 body {
 	color: var(--graphite);
 	background: var(--warm-tone-2);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-fh-oscar), Arial, Helvetica, sans-serif;
 	scroll-behavior: smooth;
 }

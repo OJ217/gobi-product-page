@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Header() {
 	return (
-		<header className='flex items-center p-5 justify-between fixed inset-x-0 top-0 bg-warm-tone-2'>
+		<header className='flex items-center p-5 justify-between fixed inset-x-0 top-0 bg-warm-tone-2 z-100'>
 			<button>
 				<Image
 					aria-hidden

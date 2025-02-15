@@ -198,8 +198,8 @@ export default function Home() {
 			</div>
 
 			<div className='grid'>
-				{PRODUCT_GRID_GALLERY.map(({ label, description, imagePath }) => (
-					<div className=''>
+				{PRODUCT_GRID_GALLERY.map(({ label, description, imagePath }, index) => (
+					<div key={index}>
 						<Image
 							src={imagePath}
 							alt='product-image'

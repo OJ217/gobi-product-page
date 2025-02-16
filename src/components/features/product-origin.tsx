@@ -52,8 +52,8 @@ export default function ProductOrigin() {
 					</p>
 				</div>
 				<div className='bg-lime flex items-center justify-center text-center lg:order-5'>
-					{composition.map(({ material, percentage }) => (
-						<div>
+					{composition.map(({ material, percentage }, index) => (
+						<div key={index}>
 							<h1 className='text-[2rem] lg:text-[4rem]'>{percentage}%</h1>
 							<p className='text-sm lg:text-sm'>{material}</p>
 						</div>

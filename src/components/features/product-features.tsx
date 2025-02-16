@@ -26,8 +26,8 @@ export default function ProductFeatures() {
 								'lg:pr-25 lg:pl-10': !isEvenRow,
 							})}
 						>
-							<h3 className='text-2xl'>{label}</h3>
-							<p className='text-sm'>{description}</p>
+							<h3 className='text-2xl lg:text-[2rem]'>{label}</h3>
+							<p className='text-sm lg:text-base'>{description}</p>
 						</div>
 					</div>
 				);

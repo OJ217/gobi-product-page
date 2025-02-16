@@ -5,7 +5,9 @@ export function GoatGray(props: React.ComponentProps<'svg'>) {
 			height='100%'
 			viewBox='0 0 26 31'
 			fill='none'
+			role='img'
 			xmlns='http://www.w3.org/2000/svg'
+			aria-label='Gray Goat'
 			{...props}
 		>
 			<path
@@ -100,7 +102,9 @@ export function GoatWhite(props: React.ComponentProps<'svg'>) {
 			height='100%'
 			viewBox='0 0 26 31'
 			fill='none'
+			role='img'
 			xmlns='http://www.w3.org/2000/svg'
+			aria-label='White Goat'
 			{...props}
 		>
 			<path

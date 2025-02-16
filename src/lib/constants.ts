@@ -1,3 +1,13 @@
+export const NAVIGATION_LINKS: { label: string }[] = [
+	{ label: 'Women' },
+	{ label: 'Men' },
+	{ label: 'Accessories' },
+	{ label: 'Home' },
+	{ label: 'Gifts' },
+	{ label: 'Sale' },
+	{ label: 'About Us' },
+];
+
 export const PRODUCT_COLORS = [
 	'#3467C2',
 	'#713A41',
@@ -46,5 +56,80 @@ export const PRODUCT_GRID_GALLERY: { label: string; description: string; imagePa
 		description:
 			'Thick polyurethane insoles and EVA outsoles containing 15% algae and 20% sugarcane to keep sustainability at the forefront of everything we do.',
 		imagePath: '/images/product-grid-5.jpeg',
+	},
+];
+
+export const PRODUCT_CAROUSEL: { imagePath: string; label: string }[] = [
+	{
+		imagePath: '/images/product-carousel-1.png',
+		label: 'Front View',
+	},
+	{
+		imagePath: '/images/product-carousel-2.png',
+		label: 'Side View',
+	},
+	{
+		imagePath: '/images/product-carousel-3.png',
+		label: 'Back View',
+	},
+	{
+		imagePath: '/images/product-carousel-4.png',
+		label: 'Top View',
+	},
+	{
+		imagePath: '/images/product-carousel-5.png',
+		label: 'Bottom View',
+	},
+];
+
+export const RECOMMENDATION_CAROUSEL: {
+	imagePath: string;
+	name: string;
+	price: number;
+	colors: { code: string; label: string }[];
+}[] = [
+	{
+		imagePath: '/images/recommendation.png',
+		name: 'Turtle Neck with Cable Stitches',
+		price: 49.99,
+		colors: [
+			{ code: '#C1E0D8', label: 'light-mint' },
+			{ code: '#A16D5F', label: 'dusty-brown' },
+			{ code: '#E1B2CE', label: 'pale-lavender' },
+			{ code: '#788C94', label: 'slate-blue' },
+		],
+	},
+	{
+		imagePath: '/images/recommendation.png',
+		name: 'Turtle Neck with Cable Stitches',
+		price: 49.99,
+		colors: [
+			{ code: '#C1E0D8', label: 'light-mint' },
+			{ code: '#A16D5F', label: 'dusty-brown' },
+			{ code: '#E1B2CE', label: 'pale-lavender' },
+			{ code: '#788C94', label: 'slate-blue' },
+		],
+	},
+	{
+		imagePath: '/images/recommendation.png',
+		name: 'Turtle Neck with Cable Stitches',
+		price: 49.99,
+		colors: [
+			{ code: '#C1E0D8', label: 'light-mint' },
+			{ code: '#A16D5F', label: 'dusty-brown' },
+			{ code: '#E1B2CE', label: 'pale-lavender' },
+			{ code: '#788C94', label: 'slate-blue' },
+		],
+	},
+	{
+		imagePath: '/images/recommendation.png',
+		name: 'Turtle Neck with Cable Stitches',
+		price: 49.99,
+		colors: [
+			{ code: '#C1E0D8', label: 'light-mint' },
+			{ code: '#A16D5F', label: 'dusty-brown' },
+			{ code: '#E1B2CE', label: 'pale-lavender' },
+			{ code: '#788C94', label: 'slate-blue' },
+		],
 	},
 ];

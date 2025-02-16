@@ -26,12 +26,19 @@
 	ul {
 		list-style-position: inside;
 	}
+
 	button {
 		cursor: pointer;
+		outline-color: currentColor;
+	}
+
+	a {
+		outline-color: currentColor;
 	}
 }
 
 body {
+	outline-color: var(--graphite);
 	color: var(--graphite);
 	background: var(--warm-tone-2);
 	font-family: var(--font-fh-oscar), Arial, Helvetica, sans-serif;

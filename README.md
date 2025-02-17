@@ -30,6 +30,6 @@ This is a clone of product page on Gobi Cashmere's e-commerce website.
 
 ## Third Party Packages
 
-- [Embla Carouse](https://www.embla-carousel.com) - A lightweight carousel library with fluid motion and great swipe precision
+- [Embla Carousel](https://www.embla-carousel.com) - A lightweight carousel library with fluid motion and great swipe precision
 - [Next.js Documentation](https://nextjs.org/docs) - React framework for building full-stack web applications
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs/installation) - Open source CSS framework.
